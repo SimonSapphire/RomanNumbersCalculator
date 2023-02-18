@@ -3,7 +3,7 @@
         xmlns:vm="using:RomanNumbersCalculator.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="200" d:DesignHeight="400"
+        mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="400"
 		MinWidth="350"
 		MinHeight="500"
 		Width="400"
@@ -36,6 +36,7 @@
 
 	<Grid ColumnDefinitions="*, *, *, *" RowDefinitions="*, *, *, *, *">
 		<TextBlock
+			Name="CalculationsResultTextBox"
 			Classes="CalculatorTextBox"
 			Grid.ColumnSpan="4"
 			Text="{Binding CurrentNumberStringRepresentation}"
