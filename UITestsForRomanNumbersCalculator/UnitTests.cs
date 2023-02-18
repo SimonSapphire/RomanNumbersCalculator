@@ -247,11 +247,9 @@ namespace UITestsForRomanNumbersCalculator
             var resultTextBox = mainWindow.GetVisualDescendants().OfType<TextBlock>().First(textBox => textBox.Name == "CalculationsResultTextBox");
             Dictionary<string, Button> buttons = initializeMainWindowButtons(mainWindow);
 
-            // MM * MM = #ERROR
-            buttons["M"].Command.Execute(buttons["M"].CommandParameter);
+            // M * M = #ERROR
             buttons["M"].Command.Execute(buttons["M"].CommandParameter);
             buttons["*"].Command.Execute(buttons["*"].CommandParameter);
-            buttons["M"].Command.Execute(buttons["M"].CommandParameter);
             buttons["M"].Command.Execute(buttons["M"].CommandParameter);
             buttons["="].Command.Execute(buttons["="].CommandParameter);
 
